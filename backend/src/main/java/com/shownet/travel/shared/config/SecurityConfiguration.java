@@ -12,10 +12,9 @@ public class SecurityConfiguration {
     SecurityFilterChain applicationSecurity(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/api/v1/health", "/actuator/health", "/v3/api-docs/**", "/swagger-ui/**")
+                        .requestMatchers("/api/v1/health", "/api/v1/catalog/**", "/actuator/health", "/v3/api-docs/**", "/swagger-ui/**")
                         .permitAll()
                         .anyRequest().denyAll())
                 .build();
     }
 }
-
