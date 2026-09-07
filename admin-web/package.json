@@ -1,0 +1,24 @@
+{
+  "name": "shownet-travel-admin-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 4173",
+    "build": "vue-tsc -b && vite build",
+    "typecheck": "vue-tsc -b"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.3",
+    "vue": "^3.5.42",
+    "vue-router": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vue-tsc": "^3.0.6"
+  },
+  "engines": {
+    "node": ">=24.12.0"
+  }
+}
+

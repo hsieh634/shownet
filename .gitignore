@@ -1,0 +1,25 @@
+.idea/
+.vscode/
+.DS_Store
+*.iml
+*.log
+.env
+.env.*
+!.env.example
+
+backend/target/
+web/.nuxt/
+web/.output/
+web/node_modules/
+admin-web/dist/
+admin-web/node_modules/
+admin-web/src/*.js
+admin-web/*.tsbuildinfo
+
+### IntelliJ ###
+out/
+
+### Test artifacts ###
+coverage/
+playwright-report/
+test-results/
